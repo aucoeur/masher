@@ -1,12 +1,10 @@
-import { configureStore } from '@reduxjs/toolkit'
-import CounterList from './components/CounterList/CounterList'
-import reducers from './reducers';
+import CounterList from './features/Counter/CounterList'
 
 import './App.css';
 
-export const store = configureStore({
-  reducer: reducers
-})
+// export const store = configureStore({
+//   reducer: reducers
+// })
 
 function App() {
 
