@@ -8,7 +8,7 @@ function CounterList() {
   const counters = useSelector(state => state.counters)
 
   const counterList = counters.map((counter, index) => {
-    return <Counter key={index} value={counter.value}/>
+    return <Counter key={index} index={index} value={counter.value}/>
   })
 
   const total = counters.reduce((total, counter) => total + counter.value, 0)
